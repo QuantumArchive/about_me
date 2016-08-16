@@ -1,0 +1,58 @@
+body {
+  background-color: azure;
+}
+
+h1 {
+  font-size:32px;
+  font-family: Arial;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Arial;
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  background-color: LightSeaGreen;
+  width: 60%;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#center {
+  height: 50%;
+  width: 50%;
+  background-color: LightSkyBlue ;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+
+hr {
+  width: 70%;
+  margin-top: -20px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+li {
+  font-family: sans-serif;
+}
+
+#topics {
+  padding: 10px 20px;
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
