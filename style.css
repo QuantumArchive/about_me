@@ -52,7 +52,22 @@ li {
 
 #topics {
   padding: 10px 20px;
-  position: relative;
   width: 90%;
   margin: auto;
+}
+
+#bonus {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: LightSkyBlue ;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }
