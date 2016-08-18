@@ -28,31 +28,39 @@ var wtfResponse = [ 'That\'s a weird answer...',
 //first prompt
 alert('Hi everyone and welcome to my page. For fun, let\'s first start with a little quiz to see how much you know about me. Just have fun with your answers! :)');
 
-for (var ii = 0; ii < questions.length; ii++) {
-  var answer = prompt(questions[ii]).toLowerCase();
-  console.log('The user input is:',answer);
-  if (answer === myAnswers[ii] || answer === myAnswers[ii][0]) {
-    alert(rightResponse[ii]);
-    questionRight += 1;
-  } else if (answer === wrongAnswers[ii] || answer === myAnswers[ii][0]) {
-    alert(wrongResponse[ii]);
-  } else {
-    alert(wtfResponse[ii]);
+function myQuestions() {
+  for (var ii = 0; ii < questions.length; ii++) {
+    var answer = prompt(questions[ii]).toLowerCase();
+    console.log('The user input is:',answer);
+    if (answer === myAnswers[ii] || answer === myAnswers[ii][0]) {
+      alert(rightResponse[ii]);
+      questionRight += 1;
+    } else if (answer === wrongAnswers[ii] || answer === myAnswers[ii][0]) {
+      alert(wrongResponse[ii]);
+    } else {
+      alert(wtfResponse[ii]);
+    }
   }
+  console.log('The number of questions right is:', questionRight);
 }
-console.log('The number of questions right is:', questionRight);
+
+myQuestions();
 
 //calculate your score
-if (questionRight >= 5){
-  alert('You got all questions right. Are you sure you\'re not me? :D');
-} else if (questionRight >= 4) {
-  alert('You got ' + questionRight + ' out of 5 questions right. That\'s crazy good!');
-} else if (questionRight >= 3) {
-  alert('You got ' + questionRight + ' out of 5 questions right. We might actually be friends.');
-} else if (questionRight >= 1) {
-  alert('You got ' + questionRight + ' out of 5 questions right. We should have lunch some time.');
-} else {
-  alert('You got ' + questionRight + ' out of 5 questions right. We don\'t know each other at all! WHO ARE YOU?!');
+function checkTotalCorrect() {
+  if (questionRight >= 5){
+    alert('You got all questions right. Are you sure you\'re not me? :D');
+  } else if (questionRight >= 4) {
+    alert('You got ' + questionRight + ' out of 5 questions right. That\'s crazy good!');
+  } else if (questionRight >= 3) {
+    alert('You got ' + questionRight + ' out of 5 questions right. We might actually be friends.');
+  } else if (questionRight >= 1) {
+    alert('You got ' + questionRight + ' out of 5 questions right. We should have lunch some time.');
+  } else {
+    alert('You got ' + questionRight + ' out of 5 questions right. We don\'t know each other at all! WHO ARE YOU?!');
+  }
 }
+
+checkTotalCorrect();
 
 alert('So you got through the first part of the quiz. Click on the link as mentioned in the description box to try some guessing games to learn more about me!');
