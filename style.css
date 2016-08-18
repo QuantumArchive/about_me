@@ -22,6 +22,9 @@ header {
   position: relative;
   margin: auto;
   border-radius: 10px;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
 }
 
 hr {
@@ -58,14 +61,28 @@ img {
   background-color: LightSkyBlue;
   border-radius: 10px;
   padding-bottom: 20px;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
 }
 
 .blockstatement {
-  padding: 10px 20px;
+  padding: 5px 20px;
   width: 90%;
   margin: auto;
 }
 
 #name {
   font-family: cursive;
+}
+
+.guessheaders {
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  padding: 10px;
+}
+
+a:hover {
+  font-weight:bold;
 }
