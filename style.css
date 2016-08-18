@@ -86,3 +86,8 @@ img {
 a:hover {
   font-weight:bold;
 }
+
+ol {
+  margin: auto;
+  width: 50%;
+}
