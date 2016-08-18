@@ -7,10 +7,8 @@ var questions = [ 'Do I play a musical instrument?',
                   'Is my highest level of education a masters?',
                   'Am I big video game nerd?',
                   'Am I originally from San Francisco?'];
-var myAnswers = [ ['no','yes','no','yes','no'],
-                  ['n','y','n','y','n']];
-var wrongAnswers = [['yes','no','yes','no','yes'],
-                    ['y','n','y','n','y']];
+var myAnswers = ['no','yes','no','yes','no'];
+var wrongAnswers = ['yes','no','yes','no','yes'];
 var rightResponse = [ 'Yup, I\'m too busy coding to be playing an instrument. ;)',
                       'That\'s correct. I\'ve been drawing for years and was even an art major once.',
                       'That\'s right! I actually have a Ph.D. :D',
@@ -26,17 +24,17 @@ var wtfResponse = [ 'That\'s a weird answer...',
                     'You need a bit more schooling I see...',
                     'Have you not experienced the joys of playing video games you unnerd?!',
                     'Where on earth is that?!'];
-//var userAnswers = [];
+
 //first prompt
 alert('Hi everyone and welcome to my page. For fun, let\'s first start with a little quiz to see how much you know about me. Just have fun with your answers! :)');
 
 for (var ii = 0; ii < questions.length; ii++) {
   var answer = prompt(questions[ii]).toLowerCase();
   console.log('The user input is:',answer);
-  if (answer === myAnswers[0][ii] || answer === myAnswers[1][ii]) {
+  if (answer === myAnswers[ii] || answer === myAnswers[ii][0]) {
     alert(rightResponse[ii]);
     questionRight += 1;
-  } else if (answer === wrongAnswers[0][ii] || answer === myAnswers[1][ii]) {
+  } else if (answer === wrongAnswers[ii] || answer === myAnswers[ii][0]) {
     alert(wrongResponse[ii]);
   } else {
     alert(wtfResponse[ii]);
