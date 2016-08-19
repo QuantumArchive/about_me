@@ -44,8 +44,6 @@ function myQuestions() {
   console.log('The number of questions right is:', questionRight);
 }
 
-myQuestions();
-
 //calculate your score
 function checkTotalCorrect() {
   if (questionRight >= 5){
@@ -61,6 +59,8 @@ function checkTotalCorrect() {
   }
 }
 
+//main
+myQuestions();
 checkTotalCorrect();
 
 alert('So you got through the first part of the quiz. Click on the link as mentioned in the description box to try some guessing games to learn more about me!');

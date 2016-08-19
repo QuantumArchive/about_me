@@ -1,5 +1,12 @@
 body {
   background-color: azure;
+  z-index: 0;
+  position: absolute;
+  background-image: url("https://static.pexels.com/photos/113/sky-clouds-cloudy-weather.jpg");
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -17,7 +24,6 @@ h2 {
 }
 
 header {
-  background-color: LightSeaGreen;
   width: 50%;
   position: relative;
   margin: auto;
@@ -25,6 +31,9 @@ header {
   -moz-box-shadow: 5px 5px 5px #777777;
   -webkit-box-shadow: 5px 5px 5px #777777;
   box-shadow: 5px 5px 5px #777777;
+  z-index: 10;
+  background-color: rgb(32, 178, 170);
+  background-color: rgba(32, 178, 170, 0.7);
 }
 
 hr {
@@ -45,25 +54,26 @@ li {
   font-family: sans-serif;
 }
 
+.centerblock {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(135,206,250);
+  background-color: rgba(135,206,250,0.7);
+  border-radius: 10px;
+  padding-bottom: 20px;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+}
+
 img {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
   max-width: 100%;
   max-height: 100%;
-}
-
-.centerblock {
-  position: relative;
-  width: 50%;
-  margin: auto;
-  margin-top: 20px;
-  background-color: LightSkyBlue;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  -moz-box-shadow: 5px 5px 5px #777777;
-  -webkit-box-shadow: 5px 5px 5px #777777;
-  box-shadow: 5px 5px 5px #777777;
 }
 
 .blockstatement {
