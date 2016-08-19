@@ -64,8 +64,6 @@ function numberGuessingGame() {
   }
 }
 
-numberGuessingGame();
-
 //second prompt
 var citiesVisited = ['Seattle','Tokyo','Kyoto','Minneapolis','Denver','Okinawa','Yokohama','Osaka','San Francisco', 'Los Angeles','Las Vegas','Houston'];
 var citiesVisitedLowCase = ['seattle','tokyo','kyoto','minneapolis','denver','okinawa','yokohama','osaka','san francisco','los angeles','las vegas','houston'];
@@ -125,8 +123,6 @@ function cityGuessingGame() {
   }
 }
 
-cityGuessingGame();
-
 //calculate your score
 function checkTotalCorrect2() {
   if (questionRight >= 2){
@@ -138,4 +134,7 @@ function checkTotalCorrect2() {
   }
 }
 
+//main script
+numberGuessingGame();
+cityGuessingGame();
 checkTotalCorrect2();
