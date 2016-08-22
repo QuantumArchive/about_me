@@ -12,14 +12,17 @@ var numGuesses = 4;
 console.log('The number of guesses allowed is:', numGuesses);
 var loopCounter = 0;
 
+//opening message
+alert('Now we\'re going to play a guessing game! Try and guess how many coffees I want to drink right now. It\'ll be between 1 and 10. I\'ll give you ' + numGuesses + ' guesses to get it. If you guess too high or too low, I\'ll inform you. Good luck!');
+
 //First question to be asked in the html
 var firstQuestion = 'Now we\'re going to play a guessing game! Try and guess how many coffees I want to drink right now. It\'ll be between 1 and 10. I\'ll give you ' + numGuesses + ' guesses to get it. If you guess too high or too low, I\'ll inform you. Good luck!';
 
 //link to the html ID
-var firstCheck = document.getElementById('firstQuestion');
+var firstCheck = document.getElementById('firstquestion');
 firstCheck.textContent = firstQuestion;
 var firstMsg = '';
-var htmlAnswersFirst = document.getElementById('answerFirstQuestion');
+var htmlAnswersFirst = document.getElementById('answerfirstquestion');
 
 function numberGuessingGame() {
   for (loopCounter; loopCounter <= numGuesses; loopCounter++) {
@@ -72,11 +75,11 @@ var cityLoopCounter = 0;
 //second question string
 var secondQuestion = 'So for this next question, I\'d like for you to try and guess a city I\'ve visited. You\'ll get ' + citiesGuess + ' tries. If you get even one correct, you pass and as a bonus I\'ll show you the rest of the cities I\'ve visited. Good luck!';
 //link to the html ID
-var secondCheck = document.getElementById('secondQuestion');
+var secondCheck = document.getElementById('secondquestion');
 secondCheck.textContent = secondQuestion;
 var secondMsg = '';
 //variable for holding the answers
-var htmlAnswersSecond = document.getElementById('answerSecondQuestion');
+var htmlAnswersSecond = document.getElementById('answersecondquestion');
 
 function cityGuessingGame() {
   for (cityLoopCounter; cityLoopCounter <= citiesGuess; cityLoopCounter++) {

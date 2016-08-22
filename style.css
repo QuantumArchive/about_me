@@ -23,6 +23,13 @@ h2 {
   padding: 10px;
 }
 
+h3 {
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  padding: 10px;
+}
+
 header {
   width: 50%;
   position: relative;
@@ -68,12 +75,22 @@ li {
   box-shadow: 5px 5px 5px #777777;
 }
 
+.innerblock {
+  width: 60%;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.7);
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  border: black 1px solid;
+}
+
 img {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   border: 5px white solid;
 }
 
@@ -96,11 +113,6 @@ img {
 
 a:hover {
   font-weight:bold;
-}
-
-ol {
-  margin: auto;
-  width: 50%;
 }
 
 figure {
