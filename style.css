@@ -1,4 +1,11 @@
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+#maincontainer {
   background-color: azure;
   z-index: 0;
   position: static;
@@ -8,6 +15,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
   overflow: auto;
 }
 
