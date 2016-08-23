@@ -1,12 +1,18 @@
 body {
   background-color: azure;
   z-index: 0;
-  position: absolute;
+  position: static;
   background-image: url("https://static.pexels.com/photos/113/sky-clouds-cloudy-weather.jpg");
   background-attachment: fixed;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
+  position: static;
+  overflow: auto;
+}
+
+html {
+  height: 100%;
 }
 
 h1 {
